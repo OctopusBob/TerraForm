@@ -1,3 +1,7 @@
+provider "aws" {
+	version = "<= 1.14.0"
+	region = "us-east-2"
+}
 terraform {
   backend "s3" {
     bucket = "octopus-usdemo-terraform"
